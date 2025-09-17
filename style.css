@@ -18,6 +18,7 @@ body {
 .profile-card {
   max-width: 370px;
   width: 100%;
+  height: auto;
   background-color: white;
   border-radius: 24px;
   padding: 25px;
@@ -25,11 +26,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease;
-}
-
-.profile-card:hover {
-  transform: scale(1.05); /* إضافة تأثير عند التمرير */
 }
 
 .image {
@@ -44,9 +40,9 @@ body {
 .image .profile-img {
   height: 100%;
   width: 100%;
-  object-fit: cover;  
+  object-fit: cover;
   border-radius: 50%;
-  border: 3px solid white;  
+  border: 3px solid white;
 }
 
 .profile-card .text-data {
@@ -59,7 +55,6 @@ body {
 .text-data .name {
   font-size: 22px;
   font-weight: 500;
-  margin-bottom: 5px;
 }
 
 .text-data .job {
@@ -88,12 +83,12 @@ body {
 }
 
 .media-buttons .link:hover {
-  background-color: #325fdb; /* تغيير اللون عند التمرير */
+  background-color: #325fdb;
 }
 
 @media (max-width: 768px) {
   .profile-card {
-    max-width: 90%; /* تجعل الكارت يأخذ 90% من العرض عند الشاشات الصغيرة */
+    max-width: 90%;
     padding: 20px;
   }
 
