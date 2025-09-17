@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: aliceblue;
+  margin: 0;
 }
 
 .profile-card {
@@ -24,6 +25,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.05); /* إضافة تأثير عند التمرير */
 }
 
 .image {
@@ -53,6 +59,7 @@ body {
 .text-data .name {
   font-size: 22px;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .text-data .job {
@@ -77,4 +84,59 @@ body {
   align-items: center;
   justify-content: center;
   color: whitesmoke;
+  transition: background-color 0.3s ease;
+}
+
+.media-buttons .link:hover {
+  background-color: #325fdb; /* تغيير اللون عند التمرير */
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    max-width: 90%; /* تجعل الكارت يأخذ 90% من العرض عند الشاشات الصغيرة */
+    padding: 20px;
+  }
+
+  .profile-img {
+    height: 130px;
+    width: 130px;
+  }
+
+  .text-data .name {
+    font-size: 20px;
+  }
+
+  .text-data .job {
+    font-size: 14px;
+  }
+
+  .media-buttons .link {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .profile-img {
+    height: 110px;
+    width: 110px;
+  }
+
+  .text-data .name {
+    font-size: 18px;
+  }
+
+  .text-data .job {
+    font-size: 12px;
+  }
+
+  .media-buttons .link {
+    height: 28px;
+    width: 28px;
+  }
 }
