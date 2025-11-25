@@ -12,16 +12,12 @@ body {
 
 .profile-card {
     background-color: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     text-align: center;
-    max-width: 300px;
+    max-width: 280px;
     width: 90%;
-}
-
-.profile-card .image {
-    margin-bottom: 15px;
 }
 
 .profile-img {
@@ -29,20 +25,21 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
-.text-data .name {
+.name {
     display: block;
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.text-data .job {
+.job {
     display: block;
     color: gray;
     font-size: 1em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .media-buttons {
@@ -51,7 +48,7 @@ body {
     gap: 10px;
 }
 
-.media-buttons .link {
+.link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,5 +58,3 @@ body {
     text-decoration: none;
     font-size: 1.2em;
 }
-
-
